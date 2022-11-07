@@ -19,11 +19,13 @@ public class BootStrapData implements CommandLineRunner {
 
     private final PublisherRepository publisherRepository;
 
+
     public BootStrapData(AuthorRepository authorRepository, BookRepository bookRepository, PublisherRepository publisherRepository) {
         this.authorRepository = authorRepository;
         this.bookRepository = bookRepository;
         this.publisherRepository = publisherRepository;
     }
+
 
     @Override
     public void run(String... args) throws Exception {
